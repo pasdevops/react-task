@@ -4,43 +4,30 @@
 // Include that component in App.jsx = Done
 // Please un comment code before you can run them based on individual homework
 
-// import React, { Component } from 'react';
-// import Elements from './components/Elements.jsx';
-// import Shopping from "./components/Shopping.jsx"
-// import Cars from './components/Cars.jsx';
+import React, { Component } from 'react';
+import Elements from './components/Elements.jsx';
+import Shopping from "./components/Shopping.jsx"
+import Cars from './components/Cars.jsx';
+import Counter from "./components/Counter";
 
-// class App extends Component {
 
-//   render() {
-//     return (
-//       <div>
-//         <Elements />
-//         <Shopping />
-//         <Cars />
-//       </div>
-//     );
-//   }
-// }
 
-// export default App;
 
-// Pass a prop into the component at #2 = Done
+class App extends Component {
 
-// import React, { Component } from 'react';
-// import Property from './components/Property.jsx';
+  render() {
+    return (
+      <div>
+        <Elements />
+        <Shopping />
+        <Cars />
+        <Counter />
+      </div>
+    );
+  }
+}
 
-// class App extends Component {
+export default App;
 
-//   render() {
-//     return (
-//       <>
-//         <Property name={"Papa React"} />
-//         <Property name={"React is Amazing Framework"} />
-//       </>
-//     );
-//   }
-// }
-
-// export default App;
 
 
