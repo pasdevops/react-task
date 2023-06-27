@@ -4,7 +4,7 @@ import React, { Component } from 'react';
 
 
 class Counter extends Component {
-  state = { count: 0 };
+  state = { count: 20 };
 
   onAdd = () => {
     this.setState({ count: this.state.count + 1 });
@@ -15,15 +15,21 @@ class Counter extends Component {
   };
 
   onReset = () => {
-    this.setState({ count: this.state.count -0 });
+    this.setState({ count: 0 });
+  };
+
+  onRemove = () => {
+    this.setState({ count: -0});
   };
 
   render() {
     return (
       <>
-        <p onClick={this.onAdd}>{this.state.count}</p>
-        <p onClick={this.onMinus}>{this.state.count}</p>
-        <p onClick={this.onReset}>{this.state.count}</p>
+        <p>{this.state.count}</p>
+        <button onClick={this.onAdd}>Add One</button>
+        <button onClick={this.onMinus}>Minus One</button>
+        <button onClick={this.onReset}>Reset</button>
+        <button onClick={this.onReset}>Remove</button>
       </>
     );
   }

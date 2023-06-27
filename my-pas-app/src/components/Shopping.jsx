@@ -9,6 +9,7 @@ class Shopping extends Component {
               <li>Milk</li>
               <li>Eggs</li>
               <li>Butter</li>
+              <li>Cheese</li>
             </ul>
           </div>
         );
