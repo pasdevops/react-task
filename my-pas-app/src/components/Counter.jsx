@@ -18,10 +18,6 @@ class Counter extends Component {
     this.setState({ count: 0 });
   };
 
-  onRemove = () => {
-    this.setState({ count: 0});
-  };
-
   render() {
     return (
       <>

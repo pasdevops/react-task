@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import ListItem from './ListItem';
 class Shopping extends Component {
     
     render() { 
@@ -10,6 +11,12 @@ class Shopping extends Component {
               <li>Eggs</li>
               <li>Butter</li>
               <li>Cheese</li>
+              {this.props.myVeg.map((item) => {
+                return <li>{item}</li>;
+              })}
+              {this.props.myVeg.map((item) => {
+                return <ListItem item={item} />
+              })}
             </ul>
           </div>
         );

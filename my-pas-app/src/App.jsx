@@ -11,16 +11,18 @@ import Cars from './components/Cars.jsx';
 import Counter from "./components/Counter";
 
 
-
-
 class App extends Component {
+
+  state = { test: "Pas", vegetables: ["Spinanach", "Brocolli", "Carrot"] };
+  
 
   render() {
     return (
       <div>
+        <p>{this.state.test}</p>
         <Elements />
-        <Shopping />
-        <Cars />
+        <Shopping myVeg={this.state.vegetables} />
+        <Cars myProp={this.state.test} />
         <Counter />
       </div>
     );
